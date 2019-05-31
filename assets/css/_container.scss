@@ -1,0 +1,23 @@
+@import "globals";
+
+.container {
+    width: auto;
+
+    padding-right: $padding;
+    padding-left: $padding;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (min-width: getBreakpoint("medium")) {
+        width: 750px;
+    }
+
+    @media (min-width: getBreakpoint("large")) {
+        width: 970px;
+    }
+
+    @media (min-width: getBreakpoint("extra-large")) {
+        width: 1170px;
+    }
+}

@@ -1,0 +1,15 @@
+$breakpoints: (
+    "small" : 576px,
+    "medium" : 768px,
+    "large" : 992px,
+    "extra-large" : 1200px,
+);
+
+@function getBreakpoint($breakpoint) {
+    @return map-get($breakpoints, $breakpoint);
+}
+
+$padding: 15px;
+$margin: 15px;
+$font: Helvetica;
+$color: #4f4f4f;

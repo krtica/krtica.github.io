@@ -1,0 +1,207 @@
+@import "globals";
+
+$max-col-size : 12;
+
+@mixin col-calculation ($min-screen-width, $col-size) {
+    @media (min-width: $min-screen-width) {
+        box-sizing: border-box;
+        padding-left: $padding;
+        padding-right: $padding;
+        float: left;
+        width: percentage($col-size/$max-col-size);
+    }
+}
+
+.row {
+    display: inline-block;
+    clear: both;
+    box-sizing: border-box;
+    padding-left: -$padding;
+    padding-right: -$padding;
+    width: 100%;
+}
+
+.col-1 {
+    @include col-calculation(0, 1);
+}
+.col-2 {
+    @include col-calculation(0, 2);
+}
+.col-3 {
+    @include col-calculation(0, 3);
+}
+.col-4 {
+    @include col-calculation(0, 4);
+}
+.col-5 {
+    @include col-calculation(0, 5);
+}
+.col-6 {
+    @include col-calculation(0, 6);
+}
+.col-7 {
+    @include col-calculation(0, 7);
+}
+.col-8 {
+    @include col-calculation(0, 8);
+}
+.col-9 {
+    @include col-calculation(0, 9);
+}
+.col-10 {
+    @include col-calculation(0, 10);
+}
+.col-11 {
+    @include col-calculation(0, 11);
+}
+.col-12 {
+    @include col-calculation(0, 12);
+}
+
+.col-sm-1 {
+    @include col-calculation(getBreakpoint("small"), 1);
+}
+.col-sm-2 {
+    @include col-calculation(getBreakpoint("small"), 2);
+}
+.col-sm-3 {
+    @include col-calculation(getBreakpoint("small"), 3);
+}
+.col-sm-4 {
+    @include col-calculation(getBreakpoint("small"), 4);
+}
+.col-sm-5 {
+    @include col-calculation(getBreakpoint("small"), 5);
+}
+.col-sm-6 {
+    @include col-calculation(getBreakpoint("small"), 6);
+}
+.col-sm-7 {
+    @include col-calculation(getBreakpoint("small"), 7);
+}
+.col-sm-8 {
+    @include col-calculation(getBreakpoint("small"), 8);
+}
+.col-sm-9 {
+    @include col-calculation(getBreakpoint("small"), 9);
+}
+.col-sm-10 {
+    @include col-calculation(getBreakpoint("small"), 10);
+}
+.col-sm-11 {
+    @include col-calculation(getBreakpoint("small"), 11);
+}
+.col-sm-12 {
+    @include col-calculation(getBreakpoint("small"), 12);
+}
+
+.col-md-1 {
+    @include col-calculation(getBreakpoint("medium"), 1);
+}
+.col-md-2 {
+    @include col-calculation(getBreakpoint("medium"), 2);
+}
+.col-md-3 {
+    @include col-calculation(getBreakpoint("medium"), 3);
+}
+.col-md-4 {
+    @include col-calculation(getBreakpoint("medium"), 4);
+}
+.col-md-5 {
+    @include col-calculation(getBreakpoint("medium"), 5);
+}
+.col-md-6 {
+    @include col-calculation(getBreakpoint("medium"), 6);
+}
+.col-md-7 {
+    @include col-calculation(getBreakpoint("medium"), 7);
+}
+.col-md-8 {
+    @include col-calculation(getBreakpoint("medium"), 8);
+}
+.col-md-9 {
+    @include col-calculation(getBreakpoint("medium"), 9);
+}
+.col-md-10 {
+    @include col-calculation(getBreakpoint("medium"), 10);
+}
+.col-md-11 {
+    @include col-calculation(getBreakpoint("medium"), 11);
+}
+.col-md-12 {
+    @include col-calculation(getBreakpoint("medium"), 12);
+}
+
+.col-lg-1 {
+    @include col-calculation(getBreakpoint("large"), 1);
+}
+.col-lg-2 {
+    @include col-calculation(getBreakpoint("large"), 2);
+}
+.col-lg-3 {
+    @include col-calculation(getBreakpoint("large"), 3);
+}
+.col-lg-4 {
+    @include col-calculation(getBreakpoint("large"), 4);
+}
+.col-lg-5 {
+    @include col-calculation(getBreakpoint("large"), 5);
+}
+.col-lg-6 {
+    @include col-calculation(getBreakpoint("large"), 6);
+}
+.col-lg-7 {
+    @include col-calculation(getBreakpoint("large"), 7);
+}
+.col-lg-8 {
+    @include col-calculation(getBreakpoint("large"), 8);
+}
+.col-lg-9 {
+    @include col-calculation(getBreakpoint("large"), 9);
+}
+.col-lg-10 {
+    @include col-calculation(getBreakpoint("large"), 10);
+}
+.col-lg-11 {
+    @include col-calculation(getBreakpoint("large"), 11);
+}
+.col-lg-12 {
+    @include col-calculation(getBreakpoint("large"), 12);
+}
+
+.col-xlg-1 {
+    @include col-calculation(getBreakpoint("extra-large"), 1);
+}
+.col-xlg-2 {
+    @include col-calculation(getBreakpoint("extra-large"), 2);
+}
+.col-xlg-3 {
+    @include col-calculation(getBreakpoint("extra-large"), 3);
+}
+.col-xlg-4 {
+    @include col-calculation(getBreakpoint("extra-large"), 4);
+}
+.col-xlg-5 {
+    @include col-calculation(getBreakpoint("extra-large"), 5);
+}
+.col-xlg-6 {
+    @include col-calculation(getBreakpoint("extra-large"), 6);
+}
+.col-xlg-7 {
+    @include col-calculation(getBreakpoint("extra-large"), 7);
+}
+.col-xlg-8 {
+    @include col-calculation(getBreakpoint("extra-large"), 8);
+}
+.col-xlg-9 {
+    @include col-calculation(getBreakpoint("extra-large"), 9);
+}
+.col-xlg-10 {
+    @include col-calculation(getBreakpoint("extra-large"), 10);
+}
+.col-xlg-11 {
+    @include col-calculation(getBreakpoint("extra-large"), 11);
+}
+.col-xlg-12 {
+    @include col-calculation(getBreakpoint("extra-large"), 12);
+}

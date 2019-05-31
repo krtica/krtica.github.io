@@ -1,0 +1,40 @@
+@import "globals";
+
+.navigation{
+    span {
+        width: 50%;
+        @media (max-width: getBreakpoint("medium")) {
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            margin-top: $margin;
+            margin-bottom: $margin;
+            font-size: 30px;
+        }
+    }
+
+    .nav-links {
+        @media (min-width: getBreakpoint("medium")) {
+            float: right;
+            text-align: right;
+            width: 50%;
+            .nav-link {
+                display: inline;
+                margin-left: 5px;
+            }
+        }
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    background-color: $color;
+    color: white;
+    font-size: 25px;
+    clear: both;
+
+    @media (min-width: getBreakpoint("medium")) {
+        padding: 10px 5px;
+    }
+}
